@@ -1,0 +1,67 @@
+body{
+   
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-size:cover;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0 2em;
+}
+nav{
+    padding: 1em;
+    margin-top: 2em;
+}
+nav > img{
+    width:10em;
+    height: auto;
+}
+
+section{
+    display: flex;
+    height: 85vh;
+    align-items: center;
+}
+
+.img-container{
+    width: 100%;  
+    height: 100%;
+
+}
+.img-container > img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    margin:  auto;
+    display: block;
+
+}
+.content-container{
+    width: 75%;  
+    padding: 2em;
+    color: white;
+}
+.content-container h1{
+   font-family: 'Poppins';
+   font-weight: 600;
+   font-size: 2rem;
+
+}
+.content-container p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.content-button{
+    background:white;
+    color: hsl(257, 40%, 49%);
+    width: 12em;
+    height: 3em;
+    border-radius:30px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+    border: none;
+   
+} 
+
+.content-button:hover{
+    background:hsl(300, 69%, 71%);
+}
