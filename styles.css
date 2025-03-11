@@ -64,21 +64,31 @@ button{
         max-width: 475px;
     }
     .logo{
-        width: 5em;
+        width: 6em;
         margin: 2em 0em;
     }
     .hero{
-
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         color:var(--white);
-        margin: 0 auto;
-
+        margin: auto;
+        padding: 1em;
+        justify-content: space-evenly;
+        text-align:center;
     }
   
    .img-container img{
-        width:100%;
+        width:90%;
         height: auto;
+   }
+   .social-icons{
+
+    display: flex;
+    justify-content: center;
+   }
+   .social-icons a{
+    padding: 1em;
    }
 }
 
