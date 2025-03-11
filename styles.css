@@ -5,6 +5,7 @@
     --dark-violet: hsl(294, 86%, 20%);
     --soft-magenta: hsl(300, 69%, 71%);
   }
+  /* reset root css*/
   * {
     margin: 0;
     padding: 0;
@@ -13,22 +14,8 @@
     font-size: 16px;
 
   }
-  .background{
-    display: flex;
-    justify-content: center;
-    background-image: url("images/bg-mobile.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: hsl(257, 40%, 49%);
-    min-height: 100vh;
-}
-.container{
-    width: 100%;
-    margin: 0 auto; 
 
-}
-h1{
+  h1{
     font-family: 'Poppins';
 }
 p{
@@ -58,22 +45,49 @@ button{
     border: none;
  
 }
+ 
+  .background{
+    display: flex;
+    justify-content: center;
+    background-image: url("images/bg-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+}
+.container{
+    
+    width: 100%;
 
+    margin: auto; 
+
+}
 .logo{
-        width: 6em;
-        margin: 2em 0em;
-    }
-    .hero{
-        max-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        color:var(--white);
-        margin: auto;
-        padding: 1em;
-        justify-content: space-evenly;
-        text-align:center;
-    }
-  
+
+    padding: 1em;
+}
+.logo img{
+    width: 8em;
+    
+}
+.hero{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:var(--white);
+    margin: auto;
+    padding: 1em;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+
+
+.hero-img{
+
+}
+   
    .img-container img{
         width:90%;
         height: auto;
@@ -91,7 +105,14 @@ button{
 /*sm*/
 @media(min-width:640px){
     .container{
+        border:12px solid pink;
         max-width: 640px;
+        max-height: 100vh;
+    }
+    .hero{
+        border:12px solid pink;
+    
+        justify-content: space-evenly;
     }
 }
 
@@ -104,8 +125,22 @@ button{
     .hero{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
 
     }
+    .hero-img{
+     
+        width: 60%;
+    }
+    .hero-content{
+       
+        width: 40%;
+    }
+    .break {
+        border: 2px solid purple;
+        flex-basis: 100%;
+        width: 0;
+      }
 }
 
 /*lg*/
